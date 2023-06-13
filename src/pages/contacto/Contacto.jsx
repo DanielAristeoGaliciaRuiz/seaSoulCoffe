@@ -4,11 +4,15 @@ import AboutMenu from '../../components/AboutMenu'
 import SectionComponent from '../../components/SectionComponent'
 import {contacto} from '../../utils/sectionsData'
 import Header from '../../layout/Header.jsx'
+import {motion} from 'framer-motion'
 
 
 const Contacto = () => {
   return (
-    <div className='generalContainer'>
+    <motion.div className='generalContainer'
+    initial={{opacity:0}}
+    animate={{opacity:1}}
+    exit={{opacity:0}}>
       <AnimatedMenu/>
       <Header data={contacto}/>
        <AboutMenu aboutData={contacto}/> 
@@ -19,7 +23,7 @@ const Contacto = () => {
           video={data.media}
           mediaType={data.mediaType}/>)
       } 
-    </div>
+    </motion.div>
   )
 }
 

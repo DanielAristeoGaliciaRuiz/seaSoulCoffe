@@ -18,6 +18,10 @@ const AnimatedMenu = () => {
       </div>
       
       <ul className='listContainer'>
+      <NavLink className='navLink' to='/'>
+      <li className='animatedMenuItem'>Inicio</li>
+        </NavLink>
+
         <NavLink className='navLink' to='/nosotros'>
       <li className='animatedMenuItem'>Nosotros</li>
         </NavLink>

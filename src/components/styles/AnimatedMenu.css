@@ -1,5 +1,9 @@
 .sectionContainerAnimatedMenu{
   position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   width: 100vw;
   height: 100vh;
   z-index: 999;
@@ -11,8 +15,8 @@
 .bxs-coffee-bean{
   font-size: 40px;
   position: absolute;
-  left: 50%;
-  transform: translatey(-50%);
+  width: auto;
+  text-align: center;
   bottom: 10px;
   z-index: 1003;
   color: var(--gray-text);
@@ -24,7 +28,7 @@
   transition: 1.5s ease-in-out;
 }
 .noActiveAnimation{
-  transform: translateY(-25px);
+  transform: translateY(-3vh);
   transition: 1.5s ease-in-out;
 }
 
@@ -34,10 +38,10 @@
   width: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   height: 100%;
   background-color: var(--color-white);
-  overflow: hidden;
 }
 .active{
   top: 0vh;
@@ -53,13 +57,14 @@ position: absolute;
 top: 95px;
 flex-direction: column;
 align-items: center;
+justify-content: center;
+padding: 0;
 gap: 10px;
-width: 100vw;
+width:auto;
 }
 
 .animatedMenuItem{
   text-align: center;
-  width: auto;
   list-style: none;
   font-size: 20px;
   color: var(--gray-text);
@@ -82,8 +87,8 @@ width: 100vw;
 .socialMedia{
   position: absolute;
   top: 330px;
-  left: 50%;
-  transform: translatey(-50%);
+  width: auto;
+  text-align: center;
 }
 .bxl-instagram{
   font-size: 25px;

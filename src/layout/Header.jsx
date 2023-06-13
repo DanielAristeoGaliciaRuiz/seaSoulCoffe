@@ -29,7 +29,6 @@ const Header = ({data}) => {
 
   const toggleMenu=()=>{
     setToggle(!toggle)
-    console.log(toggle)
   }
 
   const showNavbar = ()=>{
@@ -59,7 +58,10 @@ const Header = ({data}) => {
       {
         data.map(data=>(
         <Link key={data.id} to={data.name} smooth={true} duration={500}>
-      <li className='menuItem' onClick={()=>setSectionName(data.name)}>
+      <li className='menuItem' onClick={()=>{
+        setSectionName(data.name)
+        setToggle(!toggle)
+      } } >
         {data.name}
       </li>
         </Link>

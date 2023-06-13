@@ -1,0 +1,112 @@
+.sectionContainerAnimatedMenu{
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: 999;
+}
+.activeZIndex{
+  z-index: 1001;
+}
+
+.bxs-coffee-bean{
+  font-size: 40px;
+  position: absolute;
+  left: 50%;
+  transform: translatey(-50%);
+  bottom: 10px;
+  z-index: 1003;
+  color: var(--gray-text);
+  cursor: pointer;
+}
+
+.activeAnimation{
+  transform: translateY(-90vh);
+  transition: 1.5s ease-in-out;
+}
+.noActiveAnimation{
+  transform: translateY(-25px);
+  transition: 1.5s ease-in-out;
+}
+
+.animatedMenuContainer{
+  position: absolute;
+  z-index: 1002;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  background-color: var(--color-white);
+  overflow: hidden;
+}
+.active{
+  top: 0vh;
+  transition: 1.5s ease-in-out;
+}
+.noActive{
+  top: 100vh;
+  transition: 1.5s ease-in-out;
+} 
+.listContainer{
+display: flex;
+position: absolute;
+top: 95px;
+flex-direction: column;
+align-items: center;
+gap: 10px;
+width: 100vw;
+}
+
+.animatedMenuItem{
+  text-align: center;
+  width: auto;
+  list-style: none;
+  font-size: 20px;
+  color: var(--gray-text);
+  cursor: pointer;
+}
+.animatedMenuItem:hover{
+  transform: scale(1.1);
+  transition: .3s ease-in-out;
+}
+.closeButton{
+  position: absolute;
+  right:10px;
+  top: 10px;
+}
+.bx-x-circle{
+  font-size: 25px;
+  color: var(--gray-text);
+  cursor: pointer;
+}
+.socialMedia{
+  position: absolute;
+  top: 330px;
+  left: 50%;
+  transform: translatey(-50%);
+}
+.bxl-instagram{
+  font-size: 25px;
+  cursor: pointer;
+}
+.bxl-instagram:hover{
+  transform: scale(1.1);
+  transition: .3s ease-in-out;
+}
+.navLink{
+  text-decoration: none;
+}
+
+@media (min-width:992px) {
+  .sectionContainerAnimatedMenu{
+    width: 15vw;
+    transform: translateX(2.45vw);
+  }
+  .closeButton{
+    display: none;
+  }
+  .noActiveAnimation{
+    transform: translateY(-50vh);
+    transition: 1.5s ease-in-out;
+  }
+}

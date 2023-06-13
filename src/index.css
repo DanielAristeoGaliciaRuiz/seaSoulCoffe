@@ -1,0 +1,13 @@
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* MainColors */
+:root{
+  --color-white:#FFFFFF;
+  --gray-color:#A8ABB0;
+  --gray-text:#4F4F4D;
+  --black-text:rgb(128, 131, 131);
+}

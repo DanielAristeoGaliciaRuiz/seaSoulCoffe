@@ -3,7 +3,7 @@ import AnimatedMenu from '../../components/AnimatedMenu'
 import AboutMenu from '../../components/AboutMenu'
 import SectionComponent from '../../components/SectionComponent'
 import {variedades} from '../../utils/sectionsData'
-import Header from '../../layout/hEADER.JSX'
+import Header from '../../layout/Header.jsx'
 
 
 const Variedades = () => {

@@ -3,7 +3,7 @@ import AnimatedMenu from '../../components/AnimatedMenu'
 import AboutMenu from '../../components/AboutMenu'
 import SectionComponent from '../../components/SectionComponent'
 import {locaciones} from '../../utils/sectionsData'
-import Header from '../../layout/Header'
+import Header from '../../layout/Header.jsx'
 
 
 const Locaciones = () => {
